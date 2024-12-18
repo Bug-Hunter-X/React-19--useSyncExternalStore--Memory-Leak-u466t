@@ -1,0 +1,1 @@
+This bug occurs when using the new `useSyncExternalStore` hook in React 19 with a custom subscription function that doesn't handle unsubscribing correctly.  This can lead to memory leaks and unexpected behavior.  The issue manifests when the component unmounts, but the subscription remains active, continuing to trigger updates even after the component is no longer mounted.
